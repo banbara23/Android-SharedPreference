@@ -1,10 +1,10 @@
 package com.ikmr.banbara23.android_sharedpreference;
 
-import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -13,6 +13,48 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        findViewById(R.id.button).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                saveSharedPreference();
+            }
+        });
+
+        findViewById(R.id.button2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                saveListSharedPreference();
+            }
+        });
+
+        findViewById(R.id.button3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                saveGsonSharedPreference();
+            }
+        });
+    }
+
+    /**
+     * 保存テスト
+     */
+    private void saveSharedPreference() {
+
+    }
+
+    /**
+     * 配列
+     */
+    private void saveListSharedPreference() {
+
+    }
+
+    /**
+     * Gson使用版
+     */
+    private void saveGsonSharedPreference() {
+
     }
 
     @Override
