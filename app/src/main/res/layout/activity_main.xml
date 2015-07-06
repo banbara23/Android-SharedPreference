@@ -27,11 +27,11 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/textView"
-        android:layout_alignRight="@+id/textView"
+        android:layout_marginTop="20dp"
+        android:text="リスト"
         android:layout_below="@+id/button"
-        android:layout_marginTop="22dp"
-        android:text="リスト" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/button3"
@@ -42,5 +42,15 @@
         android:layout_below="@+id/button2"
         android:layout_marginTop="25dp"
         android:text="Gson版" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_alignStart="@+id/button3"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="25dp"
+        android:text="Gson版2" />
 
 </RelativeLayout>
